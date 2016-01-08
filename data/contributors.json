@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Luveen",
+    "status": "a",
+    "action": "b"
+  },
+  {
+    "name": "Subbalakshmi",
+    "status": "c",
+    "action": "b"
+  },
+  {
+    "name": "Aishwarya",
+    "status": "e",
+    "action": "b"
+  },
+  {
+    "name": "Vijaya",
+    "status": "g",
+    "action": "h"
+  },
+  {
+    "name": "Bharati",
+    "status": "i",
+    "action": "j"
+  },
+  {
+    "name": "Monica",
+    "status": "k",
+    "action": "l"
+  },
+  {
+    "name": "Maggu",
+    "status": "m",
+    "action": "n"
+  },
+  {
+    "name": "Chhotu",
+    "status": "o",
+    "action": "p"
+  },
+  {
+    "name": "Yoyo",
+    "status": "q",
+    "action": "r"
+  },
+  {
+    "name": "Popo",
+    "status": "s",
+    "action": "t"
+  },
+  {
+    "name": "Dilly",
+    "status": "u",
+    "action": "v"
+  }
+]

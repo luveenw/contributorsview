@@ -1,0 +1,50 @@
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../../bower_components/iron-list/iron-list.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
+<link rel="import" href="../../bower_components/Sortable/Sortable.html">
+
+<dom-module id="contributors-header-column">
+  <template>
+    <style is="custom-style">
+      paper-card {
+        margin-top: 5px;
+        width: 200px;
+      }
+      .contributorRow {
+      }
+      .handle {
+        padding: 0 3px 0 3px;
+      }
+    </style>
+
+    <iron-ajax auto url="../../data/contributors.json" last-response="{{contributors}}" on-response="handleResponse"></iron-ajax>
+
+    <!-- <sortable-js group="{{group}}"> -->
+      <template is="dom-repeat" items="{{contributors}}">
+        <!-- <template> -->
+          <div class="contributorRow">
+            <!-- <span class="handle"><b>::</b></span> -->
+            <paper-card heading="" image="" elevation="2" animated-shadow="true" animated="true">
+              <div class="card-content">
+                {{item.name}}
+              </div>
+            </paper-card>
+          </div>
+        <!-- </template> -->
+      </template>
+    <!-- </sortable-js> -->
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'contributors-header-column',
+    properties: {
+      'group': String
+    },
+    handleResponse: function (e) {
+      console.log("Response:", e.detail.response);
+    }
+  });
+</script>

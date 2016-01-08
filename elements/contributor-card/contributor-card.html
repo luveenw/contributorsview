@@ -1,0 +1,44 @@
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-styles/color.html">
+
+<dom-module id="contributor-card">
+  <template>
+    <style is="custom-style">
+      paper-card {
+        
+      }
+      paper-button.indigo {
+        background-color: var(--paper-indigo-500);
+        color: white;
+        --paper-button-raised-keyboard-focus: {
+          background-color: var(--paper-pink-a200) !important;
+          color: white !important;
+        };
+      }
+      paper-button.custom:hover {
+        background-color: var(--paper-indigo-100);
+      }
+    </style>
+
+    <paper-card heading="{{title}}" image="" elevation="2" animated-shadow="true" animated="true">
+      <div class="card-content">
+        {{message}}
+      </div>
+      <div class="card-actions">
+        <paper-button raised class="custom indigo">{{action}}</paper-button>
+      </div>
+    </paper-card>
+  </template>
+</dom-module>
+
+<script type="text/javascript">
+  Polymer({
+    is: 'contributor-card',
+    properties: {
+      'title': String,
+      'message': String,
+      'action': String
+    }
+  });
+</script>

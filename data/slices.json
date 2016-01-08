@@ -1,0 +1,79 @@
+[
+  {
+    "name": "slice 1",
+    "id": "slice1",
+    "priority": 0,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 2",
+    "id": "slice2",
+    "priority": 0,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 3",
+    "id": "slice3",
+    "priority": 0,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 4",
+    "id": "slice4",
+    "priority": 1,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 5",
+    "id": "slice5",
+    "priority": 1,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 6",
+    "id": "slice6",
+    "priority": 1,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 7",
+    "id": "slice7",
+    "priority": 3,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 8",
+    "id": "slice8",
+    "priority": 4,
+    "jobName": "job 1",
+    "jobId": "jobUuid1"
+  },
+  {
+    "name": "slice 9",
+    "id": "slice9",
+    "priority": 0,
+    "jobName": "job 2",
+    "jobId": "jobUuid2"
+  }
+  {
+    "name": "slice 2",
+    "id": "slice2",
+    "priority": 4,
+    "jobName": "job 2",
+    "jobId": "jobUuid2"
+  },
+  {
+    "name": "slice 13",
+    "id": "slice13",
+    "priority": 2,
+    "jobName": "job 2",
+    "jobId": "jobUuid2"
+  }
+]

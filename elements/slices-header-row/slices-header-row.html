@@ -1,0 +1,42 @@
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="slices-header-row">
+  <template>
+    <style is="custom-style">
+      .slicesHeaderRowContainer {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+      }
+      .slicesHeaderLevel1 {
+        margin-left: 5px;
+        border-right: 1px solid grey;
+      }
+    </style>
+
+    <iron-ajax auto url="../../data/slices.json" last-response="{{slices}}" on-response="handleResponse"></iron-ajax>
+
+    <!-- <paper-header-panel class="flex"> -->
+      <!-- <paper-toolbar></paper-toolbar> -->
+      <!-- <div class="slicesHeaderRowContainer"> -->
+        <template is="dom-repeat" items="{{slices}}">
+          <div class="slicesHeaderLevel1">
+            <span>Hello</span>
+          </div>
+        </template>
+      <!-- </div> -->
+    <!-- </paper-header-panel> -->
+    <!-- <template is="dom-repeat" items="{{slices}}">
+
+    </template>     -->
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'slices-header-row',
+    handleResponse: function (e) {
+      console.log("Response:", e.detail.response);
+    }
+  });
+</script>

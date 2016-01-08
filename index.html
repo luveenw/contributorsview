@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>ContributorsView</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <!-- <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/iron-flex-layout/classes/iron-shadow-flex-layout.html">
+    <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html"> -->
+    <link rel="import" href="bower_components/font-roboto/roboto.html"> 
+  <!--   
+    <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/paper-toast/paper-toast.html"> -->
+    <!-- <link rel="import" href="elements/contributor-card/contributor-card.html"> -->
+    <link rel="import" href="elements/contributors-header-column/contributors-header-column.html">
+    <link rel="import" href="elements/slices-header-row/slices-header-row.html">
+    <!-- <link rel="import" href="elements/slice-card/slice-card.html"> -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      #content {
+        display: flex;
+        flex-flow: row;
+        /*justify-content: space-around;*/
+        width: 100%;
+        /*margin-left: 25px;*/
+        margin-top: 5px;
+        /*padding-left: 5px;*/
+      }
+      .headerColumn {
+        width: 250px;
+        margin-left: 5px;
+        /*height: 100%;*/
+      }
+    </style>
+  </head>
+
+  <body unresolved>
+    <div id="content">
+      <div id="contributorsColumn1" class="headerColumn">
+        <contributors-header-column group="group1"></contributors-header-column>
+      </div>
+      <div id="slicesRow" class="headerRow">
+        <slices-header-row></slices-header-row>
+      </div>
+    </div>
+  </body>
+</html>
